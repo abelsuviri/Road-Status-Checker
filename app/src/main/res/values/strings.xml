@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RoadStatus</string>
+    <string name="request_error">Error retrieving the data</string>
+    <string name="retry">Retry</string>
+    <string name="road_input_hint">Road ID</string>
+    <string name="search">Search</string>
+    <string name="road_name">Road:</string>
+    <string name="road_status">Road Status:</string>
+    <string name="road_description">Status Description:</string>
+    <string name="road_not_found">The road above is not recognised</string>
+</resources>

@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    ext.androidSupportVersion = '27.1.1'
+    ext.androidTestVersion = '1.0.2'
+    ext.butterknifeVersion = '9.0.0-SNAPSHOT'
+    ext.constraintLayoutVersion = '1.1.0'
+    ext.cucumberVersion = '1.2.5'
+    ext.daggerVersion = '2.15'
+    ext.espressoVersion = '3.0.2'
+    ext.gsonVersion = '2.8.2'
+    ext.junitVersion = '4.12'
+    ext.lifecycleVersion = '1.1.1'
+    ext.mockitoVersion = '2.15.0'
+    ext.retrofitVersion = '2.3.0'
+    ext.rxVersion = '2.1.7'
+    ext.rxAndroidVersion = '2.0.1'
+    
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "com.jakewharton:butterknife-gradle-plugin:$butterknifeVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+
+    ext.sdkMinVersion = 16
+    ext.sdkTargetVersion = 27
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
